@@ -1,5 +1,6 @@
 package com.andymartinez1.ecomm.dto;
 
+import jakarta.persistence.Lob;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -31,5 +32,9 @@ public class ProductDTO {
     private boolean productAvailable;
 
     private int stockQuantity;
+
+    private String imageName;
+    private String imageType;
+    private byte[] imageData;
 
 }

@@ -1,5 +1,6 @@
 package com.andymartinez1.ecomm.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -21,13 +22,13 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String name;
 
     @Column(nullable = false)
     private String description;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String brand;
 
     @Column(nullable = false)
@@ -37,6 +38,7 @@ public class Product {
     private String category;
 
     @Column(nullable = false)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "MM-dd-yyyy")
     private Date releaseDate;
 
     @Column(nullable = false)
@@ -44,5 +46,10 @@ public class Product {
 
     @Column(nullable = false)
     private int stockQuantity;
+
+    private String imageName;
+    private String imageType;
+    @Lob
+    private byte[] imageData;
 
 }

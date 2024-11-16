@@ -15,7 +15,10 @@ public class ProductMapper {
                 product.getCategory(),
                 product.getReleaseDate(),
                 product.isProductAvailable(),
-                product.getStockQuantity()
+                product.getStockQuantity(),
+                product.getImageName(),
+                product.getImageType(),
+                product.getImageData()
         );
     }
 
@@ -29,7 +32,10 @@ public class ProductMapper {
                 productDTO.getCategory(),
                 productDTO.getReleaseDate(),
                 productDTO.isProductAvailable(),
-                productDTO.getStockQuantity()
+                productDTO.getStockQuantity(),
+                productDTO.getImageName(),
+                productDTO.getImageType(),
+                productDTO.getImageData()
         );
     }
 
