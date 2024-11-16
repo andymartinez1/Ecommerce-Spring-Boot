@@ -4,6 +4,8 @@ spring:
     username: ${db_username}
     password: ${db_password}
     driver-class-name: org.postgresql.Driver
+    hikari:
+      auto-commit: false
   jpa:
     hibernate:
       ddl-auto: update

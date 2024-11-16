@@ -5,7 +5,7 @@ import com.andymartinez1.ecomm.entity.Product;
 
 public class ProductMapper {
 
-    public static ProductDTO mapToProductDTO(Product product){
+    public static ProductDTO mapToProductDTO(Product product) {
         return new ProductDTO(
                 product.getId(),
                 product.getName(),
@@ -22,7 +22,7 @@ public class ProductMapper {
         );
     }
 
-    public static Product mapToProduct(ProductDTO productDTO){
+    public static Product mapToProduct(ProductDTO productDTO) {
         return new Product(
                 productDTO.getId(),
                 productDTO.getName(),

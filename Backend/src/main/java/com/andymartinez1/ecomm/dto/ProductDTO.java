@@ -1,9 +1,7 @@
 package com.andymartinez1.ecomm.dto;
 
-import jakarta.persistence.Lob;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;
@@ -11,7 +9,7 @@ import java.util.Date;
 
 @Getter
 @Setter
-@NoArgsConstructor
+//@NoArgsConstructor
 @AllArgsConstructor
 public class ProductDTO {
 
